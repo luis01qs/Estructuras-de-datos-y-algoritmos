@@ -19,5 +19,6 @@ namespace N
 }
 
 # include "Math.cpp"
+# include "Sort.cpp"
+# include "Auxiliar.cpp"
 # endif // My_Library
-
