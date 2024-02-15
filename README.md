@@ -4,14 +4,21 @@ El archivo My_Library.hpp tiene todas los prototipos de las funciones que se uti
 
 ## Matemáticas
 
-El proptotipo de las funciones están en My_Library.hpp y el desarrollo de las funciones está en Math.cpp. Aquí se encuentran las funciones
+El proptotipo de las funciones están en My_Library.hpp y el desarrollo de las funciones está en Math.cpp. Aquí se encuentran las funciones:
 
 - mcd: calcula el mcd entre dos números enteros
 - factorial: calcula el n-ésimo elemento de la sucesión de fibonacci de manera recursiva (no es la más eficiente)
 
 ## Ordenamiento
 
-El proptotipo de las funciones están en My_Library.hpp y el desarrollo de las funciones está en Math.cpp. Aquí se encuentran las funciones
+El proptotipo de las funciones están en My_Library.hpp y el desarrollo de las funciones está en Sort.cpp. Aquí se encuentran las funciones:
 
-- sort_: calcula el mcd entre dos números enteros
-- factorial: calcula el n-ésimo elemento de la sucesión de fibonacci de manera recursiva (no es la más eficiente)
+- sort_insertion: Ordena de menor a mayor un vector de enteros utilizando el método de la inseción. 
+- sort_seleccion: Ordena de menor a mayor un vector de enteros utilizando el método de selección. 
+- sort_bubble: Ordena de menor a mayor un vector de enteros utlilzando el método de la burbuja. 
+
+## Auxiliar
+
+El prototipo de las funciones están en My_Library.hpp y el desarrollo de las funciones está en Auxiliar.cpp. Aquí se encuentran las funciones:
+
+- 

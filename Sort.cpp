@@ -25,3 +25,14 @@ void N::sort_seleccion(std::vector<int> &a)
         N::swap(a[i], a[pos]);
     }
 }
+
+void N::sort_burbuja(std::vector<int> &a)
+{
+    for(int i=0;i<int(a.size());++i)
+    {
+        for(int j=int(a.size())-1;j>i;--j)
+        {
+            if(a[j] < a[j-1]) N::swap(a[j], a[j-1]);
+        }
+    }
+}

@@ -13,9 +13,12 @@ namespace N
     // Sorting
     void sort_insercion(std::vector<int> &a);
     void sort_seleccion(std::vector<int> &a);
+    void sort_burbuja(std::vector<int> &a);
 
     // Auxiliares
     void swap(int &a, int &b);
+    int max(int &a, int &b);
+    int min(int &a, int &b);
 }
 
 # include "Math.cpp"
