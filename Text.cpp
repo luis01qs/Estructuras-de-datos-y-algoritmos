@@ -6,7 +6,7 @@ int main()
     std::cout << N::mcd(x, y) << std::endl;
 
     std::vector<int> a = {4, 2, 5, 7, 10, 2, 5, 2, 7, 1};
-    N::sort_burbuja(a);
+    N::sort_quicksort(a);
 
     for(auto &e:a) std::cout << e << " ";
     std::cout << std::endl;

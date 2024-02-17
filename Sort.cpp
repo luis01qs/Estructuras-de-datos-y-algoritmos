@@ -36,3 +36,34 @@ void N::sort_burbuja(std::vector<int> &a)
         }
     }
 }
+
+void N::sort_quicksort(std::vector<int> &a)
+{
+    N::sort_quicksort(a, 0, a.size()-1);
+}
+
+void N::sort_quicksort(std::vector<int> &a, int l, int r)
+{
+    if(r - l <= 1) return;
+
+    int p = a[l], cont = 0;
+    for(int i=l+1;i<=r;++i)
+    {
+        if(a[i] <= p) cont++;
+    }
+
+    int p_indice = l + cont;
+    N::swap(a[l], a[p_indice]);
+
+    int i = l, j = r;
+    while(i < p_indice && j > p_indice)
+    {
+        while(a[i] <= p) ++i;
+        while(a[j] > p) ++j;
+
+        if(i < p_indice && j > p_indice) N::swap(a[i++], a[j--]);
+    }
+
+    N::sort_quicksort(a, l, p-1);
+    N::sort_quicksort(a, p+1, r);
+}
