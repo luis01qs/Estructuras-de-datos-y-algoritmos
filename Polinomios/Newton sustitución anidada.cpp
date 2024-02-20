@@ -35,7 +35,7 @@ int main()
 void Polynomial::Initialize()
 {
     std::cin >> n;
-    n++;
+    ++n;
 
     x.resize(n, 0);
     y.resize(n, 0);
