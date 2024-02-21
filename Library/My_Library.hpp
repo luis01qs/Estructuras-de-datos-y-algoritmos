@@ -14,8 +14,7 @@ namespace N
     void sort_insercion(std::vector<int> &a);
     void sort_seleccion(std::vector<int> &a);
     void sort_burbuja(std::vector<int> &a);
-    void sort_quicksort(std::vector<int> &a);
-    void sort_quicksort(std::vector<int> &a, int l, int r);
+    void sort_quicksort(std::vector<int> &a, int x, int y);
 
     // Auxiliares
     void swap(int &a, int &b);

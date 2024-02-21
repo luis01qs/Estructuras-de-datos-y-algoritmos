@@ -1,5 +1,6 @@
 # include "My_Library.hpp"
 
+// Insercion
 void N::sort_insercion(std::vector<int> &a)
 {
     for(int i=0;i<int(a.size())-1;++i)
@@ -11,6 +12,7 @@ void N::sort_insercion(std::vector<int> &a)
     }
 }
 
+// Selección
 void N::sort_seleccion(std::vector<int> &a)
 {
     int pos;
@@ -26,6 +28,7 @@ void N::sort_seleccion(std::vector<int> &a)
     }
 }
 
+// Burbuja
 void N::sort_burbuja(std::vector<int> &a)
 {
     for(int i=0;i<int(a.size());++i)
@@ -37,33 +40,26 @@ void N::sort_burbuja(std::vector<int> &a)
     }
 }
 
-void N::sort_quicksort(std::vector<int> &a)
+// Quick sort
+void N::sort_quicksort(std::vector<int> &a, int x, int y)
 {
-    N::sort_quicksort(a, 0, a.size()-1);
-}
+    if(x >= y) return ;
 
-void N::sort_quicksort(std::vector<int> &a, int l, int r)
-{
-    if(r - l <= 1) return;
+    int pivot = a[y];
+	int i = x - 1;
 
-    int p = a[l], cont = 0;
-    for(int i=l+1;i<=r;++i)
-    {
-        if(a[i] <= p) cont++;
-    }
+	for(int j=x;j<=y-1;j++)
+	{
+		if(a[j] <= pivot)
+		{
+            i++;
+			std::swap(a[j], a[i]);
+		} 
+	}
 
-    int p_indice = l + cont;
-    N::swap(a[l], a[p_indice]);
+	std::swap(a[y], a[i + 1]);
+    pivot = i+1;
 
-    int i = l, j = r;
-    while(i < p_indice && j > p_indice)
-    {
-        while(a[i] <= p) ++i;
-        while(a[j] > p) ++j;
-
-        if(i < p_indice && j > p_indice) N::swap(a[i++], a[j--]);
-    }
-
-    N::sort_quicksort(a, l, p-1);
-    N::sort_quicksort(a, p+1, r);
+    sort_quicksort(a, x, pivot - 1);
+    sort_quicksort(a, pivot + 1, y);
 }
