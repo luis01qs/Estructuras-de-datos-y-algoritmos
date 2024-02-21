@@ -15,7 +15,9 @@ El proptotipo de las funciones están en My_Library.hpp y el desarrollo de las f
 
 - sort_insertion: Ordena de menor a mayor un vector de enteros utilizando el método de la inseción. 
 - sort_seleccion: Ordena de menor a mayor un vector de enteros utilizando el método de selección. 
-- sort_bubble: Ordena de menor a mayor un vector de enteros utlilzando el método de la burbuja. 
+- sort_burbuja: Ordena de menor a mayor un vector de enteros utlilzando el método de la burbuja. 
+- sort_quicksort: Ordena de menor a mayor un vector de enteros ultilizando el método de quick sort. 
+
 
 ## Auxiliar
 
