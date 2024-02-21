@@ -53,11 +53,11 @@ void N::sort_quicksort(std::vector<int> &a, int x, int y)
 		if(a[j] <= pivot)
 		{
             i++;
-			std::swap(a[j], a[i]);
+			N::swap(a[j], a[i]);
 		} 
 	}
 
-	std::swap(a[y], a[i + 1]);
+	N::swap(a[y], a[i + 1]);
     pivot = i+1;
 
     sort_quicksort(a, x, pivot - 1);
