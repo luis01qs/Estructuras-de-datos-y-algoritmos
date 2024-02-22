@@ -7,6 +7,7 @@ class Polynomial
         int n, m;
         std::vector<long double> x, y, xp, yp;
         std::vector<std::vector<long double>> c;
+        long double promedio, maximo;
 
     public:
         void Initialize();
@@ -14,6 +15,9 @@ class Polynomial
         void Evaluate();
         void Print_Evaluations();
         void Print_Coeficients();
+        void Print_Problema();
+        void Promedio();
+        void Maximo();
 };
 
 double absoluto(double &a);
@@ -21,13 +25,16 @@ double absoluto(double &a);
 int main()
 {
     freopen("datos.txt", "r", stdin);
-    freopen("salida.txt", "w", stdout);
+    //freopen("salida.txt", "w", stdout);
     Polynomial pol;
     pol.Initialize();
     pol.Divided_Differences();
     pol.Evaluate();
-    pol.Print_Evaluations();
+    pol.Promedio();
+    pol.Maximo();
+    //pol.Print_Evaluations();
     //pol.Print_Coeficients();
+    //pol.Print_Problema();
 
     return 0;
 }
@@ -100,7 +107,7 @@ void Polynomial::Print_Evaluations()
         error += (absoluto(e));
     }
 
-    std::cout << "Error total: " << error << std::endl; 
+    std::cout << "Error total: " << error << std::endl;
 }
 
 void Polynomial::Print_Coeficients()
@@ -118,3 +125,46 @@ double absoluto(double &a)
     return a;
 }
 
+void Polynomial::Print_Problema()
+{
+    std::cout << n << std::endl;
+    for(int i=0;i<n;++i)
+    {
+        std::cout << x[i] << " " << y[i] << std::endl;
+    }
+
+    std::cout << m << std::endl;
+    for(int i=0;i<m;++i)
+    {
+        std::cout << xp[i] << std::endl;
+    }
+}
+
+void Polynomial::Promedio()
+{
+    promedio = 0;
+    for(int i=0;i<m;++i)
+    {
+        promedio += yp[i];
+    }
+
+    promedio = promedio / m;
+
+    std::cout << "El promedio del polinomio es aproximadamente: " << promedio << std::endl;
+}
+
+void Polynomial::Maximo()
+{
+    maximo = 0;
+    long double pos = 0;
+    for(int i=0;i<m;++i)
+    {
+        if(maximo < yp[i])
+        {
+            maximo = yp[i];
+            pos = xp[i];
+        }
+    }
+
+    std::cout << "El máximo del polinomio es de aproximadamente: " << maximo <<  " alcanzado en el día: " << pos << std::endl;
+}
