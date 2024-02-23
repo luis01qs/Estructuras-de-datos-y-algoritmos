@@ -82,3 +82,18 @@ void N::sort_quicksort(std::vector<int> &a, int x, int y)
     sort_quicksort(a, x, pivot - 1);
     sort_quicksort(a, pivot + 1, y);
 }
+
+// Shell sort
+void N::sort_shellsort(std::vector<int> &a)
+{
+    int temp, j;
+    for(int gap=int(a.size());gap>0;gap/=2)
+    {
+        for(int i=gap;i<int(a.size());++i)
+        {
+            temp = a[i];
+            for(j=i;j>=gap && a[j-gap]>temp;j-=gap) a[j] = a[j - gap];
+            a[j] = temp;
+        }
+    }
+}
