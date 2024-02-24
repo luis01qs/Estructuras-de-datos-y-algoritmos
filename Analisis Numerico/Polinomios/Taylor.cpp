@@ -1,4 +1,5 @@
 # include <iostream>
+# include <math.h>
 
 int main()
 {
@@ -8,24 +9,23 @@ int main()
     int n;
     long double res, potencia, factorial, x;
 
-
-    x = 0;
-    n = 50;
-    while(x <= 10)
+    x = -5;
+    n = 200;
+    while(x <= 5)
     {
-        potencia = 1;
+        potencia = x;
         factorial = 1;
-        res = 0;
+        res = x;
         for(int k=1;k<=n;++k)
         {
+            potencia *= - (x * x);
             factorial *= k;
-            potencia *= x;
 
-            res += potencia/(factorial * k);
+            res += potencia/(factorial*(2*k+1));
         }
 
+        res *= 2/sqrt(M_PI);
         std::cout << x << " " << res << std::endl;
-
         x += 0.01;
     }
 
