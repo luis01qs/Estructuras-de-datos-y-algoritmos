@@ -1,5 +1,6 @@
-datos <- read.table(file="C:\\Users\\luis0\\Desktop\\Libreria c++\\Estructuras-de-datos-y-algoritmos\\Analisis Numerico\\Polinomios\\output\\salida.txt", header=FALSE, sep = "")
+
+datos <- read.table(file = "C:\\Users\\luis0\\Desktop\\Libreria c++\\Estructuras-de-datos-y-algoritmos\\Analisis Numerico\\Polinomios\\output\\salida.txt", header=FALSE, sep = "")
 x11()
-plot(datos[,1],datos[,2])
+plot(datos[, 1], datos[, 2], type = "l", col = "red", lwd=2)
 datos
 

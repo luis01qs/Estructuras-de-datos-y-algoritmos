@@ -7,25 +7,21 @@ int main()
 {
     freopen("datos.txt", "w", stdout);
 
-    int n = 5;
-    cout << n << endl;
-
-    double a = -5;
-    double x, y;
+    int n = 30;
+    cout << n << nl;
     for(int i=0;i<n+1;++i)
     {
-        x = a + double(i)/n * 10;
-        y = 1/(1+x*x);
-        cout << x << " " << y << nl;
+        cout << i << nl;
     }
 
-    int m = 30;
+    int m = 10*100;
     cout << m << nl;
-
-    for(int i=1;i<m+1;++i)
+    for(int i=0;i<m;++i)
     {
-        cout << a + double(i)/(m+1) * 10 << nl;
+        cout << 10 + 10*(long double)(i)/m << nl;
     }
+
+    cout << 3 << nl;
 
     return 0;
 }

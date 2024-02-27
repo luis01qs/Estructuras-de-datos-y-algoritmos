@@ -27,13 +27,21 @@ void p(std::vector<long double> &a)
 int main()
 {
     freopen("datos.txt", "r", stdin);
-    Polynomial pol;
-    pol.Intialize();
-    //pol.Calculate_Natural();
-    pol.Calculate_Clamped();
-    pol.Print_Coefficients();
-    pol.Evaluate();
-    pol.Print_Results();
+    freopen("salida.txt", "w", stdout);
+
+    int tt;
+    std::cin >> tt;
+    while(tt--)
+    {
+        Polynomial pol;
+        pol.Intialize();
+        //pol.Calculate_Natural();
+        pol.Calculate_Clamped();
+        pol.Print_Coefficients();
+        std::cout << std::endl;
+        //pol.Evaluate();
+        //pol.Print_Results();
+    }
 
     return 0;
 }
@@ -64,13 +72,14 @@ void Polynomial::Intialize()
 
     a = y;
 
-    std::cin >> m;
+    m = (x[n-1] - x[0]) * 100;
     xp.resize(m);
     yp.resize(m, 0);
 
-    for(int i=0;i<m;++i) std::cin >> xp[i];
-
-
+    for(int i=0;i<m;++i)
+    {
+        xp[i] = x[0] + (x[n-1] - x[0]) * (long double)(i)/m; 
+    }
 }
 
 void Polynomial::Calculate_Natural()
@@ -154,7 +163,6 @@ void Polynomial::Print_Coefficients()
 
 void Polynomial::Evaluate()
 {
-    std::cout << m << std::endl;
     for(int i=0;i<m;++i)
     {
         for(int j=0;j<n-1;++j)
