@@ -18,6 +18,7 @@ El proptotipo de las funciones están en My_Library.hpp y el desarrollo de las f
 - sort_burbuja: Ordena de menor a mayor un vector de enteros utlilzando el método de la burbuja. 
 - sort_quicksort: Ordena de menor a mayor un vector de enteros ultilizando el método de quick sort. 
 - sort_shellsort: Ordena de menor a mayor un vector de enteros ulitizando el método de shell sort.
+- sort_mergesort: Ordena de menor a mayor un vector de enteros utilizando el método de merge sort.
 
 ## Auxiliar
 

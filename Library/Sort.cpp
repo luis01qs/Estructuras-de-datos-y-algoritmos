@@ -18,6 +18,7 @@ void N::sort_insercion(std::vector<int> &a)
 // Selección
 void N::sort_seleccion(std::vector<int> &a)
 {
+    // Variable auxiliar
     int pos;
 
     // Itera elementos de derecha a izquierda 
@@ -86,14 +87,83 @@ void N::sort_quicksort(std::vector<int> &a, int x, int y)
 // Shell sort
 void N::sort_shellsort(std::vector<int> &a)
 {
+    // Creamos variables auxiliares
     int temp, j;
+
+    // Iteramos sobre el tamaño del gap 
     for(int gap=int(a.size());gap>0;gap/=2)
     {
+        // Iteramos sobre todos los elementos desde el tamaño del gap hasta el final del vector
         for(int i=gap;i<int(a.size());++i)
         {
+            // Utilizamos una variable auxiliar que almacene temporalmente el valor de a[i]
             temp = a[i];
-            for(j=i;j>=gap && a[j-gap]>temp;j-=gap) a[j] = a[j - gap];
+
+            // Iteramos sobre elementos de el vector con saltos de distancia gap
+            for(j=i;j>=gap && a[j-gap]>temp;j-=gap) 
+            {
+                // Recorremos los elementos a la derecha
+                a[j] = a[j - gap];
+            }
+
+            // Movemos a[i] a a[j]
             a[j] = temp;
         }
+    }
+}
+
+// Merge sort
+void N::sort_mergesort(std::vector<int> &a, int l, int r)
+{
+    // Definición de caso base
+    if(r - l == 0) return;
+
+    // Ordenamos los dos subarreglos de forma recursiva
+    sort_mergesort(a, l, (r+l)/2);
+    sort_mergesort(a, (l+r)/2+1, r);
+
+    // Creamos vector auxiliar
+    std::vector<int> aux(r-l+1);
+
+    // Inicializamos iteradores
+    int i = l, j = (l+r)/2 + 1, k = 0;
+
+    // Merge
+    while(i <= (r+l)/2 && j <= r)
+    {
+        //Tomamos el más pequeño de la orilla izquierda de ambos subarreglos y anexamos al vector auxiliar
+        if(a[i] <= a[j])
+        {
+            aux[k] = a[i];
+            ++i;
+        }
+        else
+        {
+            aux[k] = a[j];
+            ++j;
+        }
+        ++k;
+    }
+
+    // Terminamos de añadir todos los valores restantes del primer subarreglo
+    while(i <= (r+l)/2)
+    {
+        aux[k] = a[i];
+        ++i;
+        ++k;
+    }
+
+    // Terminamos de añadir todos los valores restantes del segundo subarreglo
+    while(j <= r)
+    {
+        aux[k] = a[j];
+        ++j;
+        ++k;
+    }
+
+    // Hacemos la modificacion en el vector original
+    for(int i=0;i<int(aux.size());++i)
+    {
+        a[i+l] = aux[i];
     }
 }
