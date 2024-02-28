@@ -3,25 +3,31 @@
 
 using namespace std;
 
+/*
+4
+0 0 75
+0 0
+3 225 77
+3 225
+5 383 80
+5 383
+8 623 74
+8 623
+13 993 72
+13 993
+*/
+
 int main()
 {
     freopen("datos.txt", "w", stdout);
 
-    int n = 30;
-    cout << n << nl;
-    for(int i=0;i<n+1;++i)
-    {
-        cout << i << nl;
-    }
+    int n = 100*13;
+    cout << n << endl;
 
-    int m = 10*100;
-    cout << m << nl;
-    for(int i=0;i<m;++i)
+    for(int i=0;i<n;++i)
     {
-        cout << 10 + 10*(long double)(i)/m << nl;
+        cout << 13*double(i)/n << endl;
     }
-
-    cout << 3 << nl;
 
     return 0;
 }

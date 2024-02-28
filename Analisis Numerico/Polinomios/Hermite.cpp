@@ -5,7 +5,7 @@ class Polynomial
 {
     private:
         int n, m;
-        std::vector<long double> x, y, xp, yp;
+        std::vector<long double> x, y, d,  xp, yp;
         std::vector<std::vector<long double>> c;
         long double promedio, maximo;
 
@@ -43,13 +43,17 @@ void Polynomial::Initialize()
 {
     std::cin >> n;
     ++n;
+    n = 2*n;
 
     x.resize(n, 0);
     y.resize(n, 0);
-    c.resize(n, std::vector<long double>(n, 0));
+    d.resize(n, 100000);
+    c.resize(n, std::vector<long double>(n, 100000));
 
-    for(int i=0;i<n;++i)
+    for(int i=0;i<n;i++)
     {
+        std::cin >> x[i] >> y[i] >> d[i];
+        i++;
         std::cin >> x[i] >> y[i];
     }
 
@@ -69,12 +73,17 @@ void Polynomial::Divided_Differences()
     for(int i=0;i<n;++i)
     {
         c[i][0] = y[i];
+        c[i][1] = d[i];
     }
+
+    //Print_Coeficients();
+    std::cout << std::endl;
 
     for(int j=1;j<n;++j)
     {
         for(int i=0;i<n-j;++i)
         {
+            if(c[i][j] != 100000) continue;
             c[i][j] = (c[i+1][j-1]-c[i][j-1])/(x[i+j]-x[i]);
         }
     }
@@ -94,29 +103,35 @@ void Polynomial::Evaluate()
 
 void Polynomial::Print_Evaluations()
 {
-    double error = 0;
-    double eva, e;
+    //double error = 0;
+    //double eva, e;
     for(int i=0;i<m;++i)
     {
-        eva = double(1)/(1+xp[i]*xp[i]);
-        std::cout << "Punto " << i+1 << std::endl;
-        std::cout << "f(" << xp[i] << ") = " << eva << std::endl;
-        std::cout << "p(" << xp[i] << ") = " << yp[i] << std::endl;
-        std::cout << std::endl;
-        e = eva - yp[i];
-        error += (absoluto(e));
+        //eva = double(1)/(1+xp[i]*xp[i]);
+        //std::cout << "Punto " << i+1 << std::endl;
+        //std::cout << "f(" << xp[i] << ") = " << eva << std::endl;
+        std::cout << xp[i] << " " << (yp[i+1] - yp[i])/(xp[i+1] - xp[i]) << std::endl;
+        //std::cout << std::endl;
+        //e = eva - yp[i];
+        //error += (absoluto(e));
     }
 
-    std::cout << "Error total: " << error << std::endl;
+    //std::cout << "Error total: " << error << std::endl;
 }
 
 void Polynomial::Print_Coeficients()
 {
     for(int i=0;i<n;++i)
     {
-        std::cout << c[0][i] << " ";
+        //std::cout << c[0][i] << " ";
     }
-    std::cout << std::endl;
+    //std::cout << std::endl;
+
+    for(auto &e:c)
+    {
+        for(auto &u:e) std::cout << u << " ";
+        std::cout << std::endl;
+    }
 }
 
 double absoluto(double &a)
