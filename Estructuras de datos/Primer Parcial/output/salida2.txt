@@ -1,0 +1,14 @@
+Bimestre de menor venta: 2 - 2019 - 50
+Bimestre de mayor venta: 4 - 2019 - 850
+Bimestre de menor venta: 2 - 2020 - 69
+Bimestre de mayor venta: 4 - 2020 - 1000
+Bimestre de menor venta: 1 - 2021 - 45
+Bimestre de mayor venta: 3 - 2021 - 600
+
+Bimestre de menor venta global: 1 - 2021 - 45
+Bimestre de mayor venta global: 4 - 2020 - 1000
+
+4 - 2019 - 850
+4 - 2020 - 1000
+3 - 2021 - 600
+

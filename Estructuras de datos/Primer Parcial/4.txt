@@ -1,0 +1,9 @@
+¿Cuántas horas extras dedico para practicar programación en C/C++?
+
+Actualmente dedico 14 horas semanales a programación en C++:
+
+    - 5 horas a la semana en programación competitiva.
+    - 5 horas a la semana en análisis numérico II.
+    - 4 horas a la semana en estructuras de datos y algoritmos I.
+
+Adicionalmente de el tiempo que me conlleva estudiar y hacer tarea. Por lo que el tiempo estimado se acerca a las 20 horas semanales.
