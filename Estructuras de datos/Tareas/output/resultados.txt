@@ -1,0 +1,63 @@
+Ejercicio 1
+El cuadrado de 10 usando referencia es: 100
+
+Ejercicio 2
+El cuadrado de 10 usando retorno de función es: 100
+
+Ejercicio 3
+Pasando un puntero con valor inicial *ptr = 10 y en la función sumarle 10 resulta: 20
+
+Ejercicio 4
+En este programa se crea puntero constante a variable no constante
+Se aclara que lo constante es a donde apunta, más no el valor de la posición de memoria que almacena
+10
+30
+
+Ejercicio 5
+Imprimiendo dirección de memoria que apunta puntero nulo: 0
+
+Ejercicio 6
+Conviene cuando queremos generar estructuras finitas. Por ejemplo un árbol
+, una lista enlazada o una cola, siempre que queramos conocer cuando termina una estructura
+
+Ejercicio 7
+Matriz diagonal de tamaño n = 10: 
+0 0 0 0 0 0 0 0 0 0 
+0 1 0 0 0 0 0 0 0 0 
+0 0 2 0 0 0 0 0 0 0 
+0 0 0 3 0 0 0 0 0 0 
+0 0 0 0 4 0 0 0 0 0 
+0 0 0 0 0 5 0 0 0 0 
+0 0 0 0 0 0 6 0 0 0 
+0 0 0 0 0 0 0 7 0 0 
+0 0 0 0 0 0 0 0 8 0 
+0 0 0 0 0 0 0 0 0 9 
+
+Ejercicio 8
+El operador de indirreción es (*), y se utiliza para retornar el valor que está
+almacenado en la dirección de memoria que contiene el puntero
+El puntero apunta a un entero que almacena el valor 20, veamos: 20
+
+Ejercicio 9
+El puntero apunta a un entero que almacena el valor 20, veamos: 20
+
+Ejercicio 10
+Valores de a = 10 y b = 20
+Valor con puntero 0x9b863ffac4
+Valor con puntero 0x9b863ffac0
+
+Ejercicio 11
+La diferencia es que el primero retorna la dirección de memoria que almacena al puntero, 
+y el otro retorna la dirección de memoria que almacena el puntero
+
+Ejercicio 12
+Al primero le hace falta inicializar el puntero, es decir, pInt = new int
+Al segundo le hace falta hacer *pVar = 9
+
+Ejercicio 13
+Se imprime dirección de memoria de m y luego a donde apunta el puntero que almacena la dirección de memoria de m
+0x9b863ffacc 0x9b863ffacc
+Se cancelan los operadores, ya que se le pide el valor que almacena la dirección de memoria del puntero que almacena a m, es decir &m
+En segundo, se le pide la dirección de memoria al valor que almacena la dirección de memoria de m, es decir &m
+0x9b863ffacc 0x9b863ffacc
+
