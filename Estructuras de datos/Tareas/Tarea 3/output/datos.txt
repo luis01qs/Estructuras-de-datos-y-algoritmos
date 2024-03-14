@@ -1,0 +1,510 @@
+Valores de i, *p_j y *p_k respectivamente:
+25 25 25
+
+Los valores de a y b respectivamente: 
+10 20
+Los valores de a y b después de modificar respectivamente: 
+20 10
+
+Valor del producto punto: 8
+Valor del producto punto: 2
+Valor del producto punto: 0.888889
+Valor del producto punto: 0.5
+Valor del producto punto: 0.32
+Valor del producto punto: 0.222222
+Valor del producto punto: 0.163265
+Valor del producto punto: 0.125
+Valor del producto punto: 0.0987654
+Valor del producto punto: 0.08
+Valor del producto punto: 0.0661157
+Valor del producto punto: 0.0555556
+Valor del producto punto: 0.0473373
+Valor del producto punto: 0.0408163
+Valor del producto punto: 0.0355556
+Valor del producto punto: 0.03125
+Valor del producto punto: 0.0276817
+Valor del producto punto: 0.0246914
+Valor del producto punto: 0.0221607
+Valor del producto punto: 0.02
+Valor del producto punto: 0.0181406
+Valor del producto punto: 0.0165289
+Valor del producto punto: 0.0151229
+Valor del producto punto: 0.0138889
+Valor del producto punto: 0.0128
+Valor del producto punto: 0.0118343
+Valor del producto punto: 0.0109739
+Valor del producto punto: 0.0102041
+Valor del producto punto: 0.00951249
+Valor del producto punto: 0.00888889
+Valor del producto punto: 0.00832466
+Valor del producto punto: 0.0078125
+Valor del producto punto: 0.00734619
+Valor del producto punto: 0.00692042
+Valor del producto punto: 0.00653061
+Valor del producto punto: 0.00617284
+Valor del producto punto: 0.00584368
+Valor del producto punto: 0.00554017
+Valor del producto punto: 0.0052597
+Valor del producto punto: 0.005
+Valor del producto punto: 0.00475907
+Valor del producto punto: 0.00453515
+Valor del producto punto: 0.00432666
+Valor del producto punto: 0.00413223
+Valor del producto punto: 0.00395062
+Valor del producto punto: 0.00378072
+Valor del producto punto: 0.00362155
+Valor del producto punto: 0.00347222
+Valor del producto punto: 0.00333195
+Valor del producto punto: 0.0032
+Valor del producto punto: 0.00307574
+Valor del producto punto: 0.00295858
+Valor del producto punto: 0.00284799
+Valor del producto punto: 0.00274348
+Valor del producto punto: 0.00264463
+Valor del producto punto: 0.00255102
+Valor del producto punto: 0.0024623
+Valor del producto punto: 0.00237812
+Valor del producto punto: 0.00229819
+Valor del producto punto: 0.00222222
+Valor del producto punto: 0.00214996
+Valor del producto punto: 0.00208117
+Valor del producto punto: 0.00201562
+Valor del producto punto: 0.00195312
+Valor del producto punto: 0.00189349
+Valor del producto punto: 0.00183655
+Valor del producto punto: 0.00178213
+Valor del producto punto: 0.0017301
+Valor del producto punto: 0.00168032
+Valor del producto punto: 0.00163265
+Valor del producto punto: 0.00158699
+Valor del producto punto: 0.00154321
+Valor del producto punto: 0.00150122
+Valor del producto punto: 0.00146092
+Valor del producto punto: 0.00142222
+Valor del producto punto: 0.00138504
+Valor del producto punto: 0.0013493
+Valor del producto punto: 0.00131492
+Valor del producto punto: 0.00128185
+Valor del producto punto: 0.00125
+Valor del producto punto: 0.00121933
+Valor del producto punto: 0.00118977
+Valor del producto punto: 0.00116127
+Valor del producto punto: 0.00113379
+Valor del producto punto: 0.00110727
+Valor del producto punto: 0.00108167
+Valor del producto punto: 0.00105694
+Valor del producto punto: 0.00103306
+Valor del producto punto: 0.00100997
+Valor del producto punto: 0.000987654
+Valor del producto punto: 0.000966067
+Valor del producto punto: 0.00094518
+Valor del producto punto: 0.000924962
+Valor del producto punto: 0.000905387
+Valor del producto punto: 0.000886427
+Valor del producto punto: 0.000868056
+Valor del producto punto: 0.00085025
+Valor del producto punto: 0.000832986
+Valor del producto punto: 0.000816243
+Valor del producto punto: 0.0008
+
+El valor de la matriz C es de: 
+0 2 
+2 4 
+
+El valor de la matriz C es de: 
+2 4 
+4 6 
+
+El valor de la matriz C es de: 
+4 6 
+6 8 
+
+El valor de la matriz C es de: 
+6 8 
+8 10 
+
+El valor de la matriz C es de: 
+8 10 
+10 12 
+
+El valor de la matriz C es de: 
+10 12 
+12 14 
+
+El valor de la matriz C es de: 
+12 14 
+14 16 
+
+El valor de la matriz C es de: 
+14 16 
+16 18 
+
+El valor de la matriz C es de: 
+16 18 
+18 20 
+
+El valor de la matriz C es de: 
+18 20 
+20 22 
+
+El valor de la matriz C es de: 
+20 22 
+22 24 
+
+El valor de la matriz C es de: 
+22 24 
+24 26 
+
+El valor de la matriz C es de: 
+24 26 
+26 28 
+
+El valor de la matriz C es de: 
+26 28 
+28 30 
+
+El valor de la matriz C es de: 
+28 30 
+30 32 
+
+El valor de la matriz C es de: 
+30 32 
+32 34 
+
+El valor de la matriz C es de: 
+32 34 
+34 36 
+
+El valor de la matriz C es de: 
+34 36 
+36 38 
+
+El valor de la matriz C es de: 
+36 38 
+38 40 
+
+El valor de la matriz C es de: 
+38 40 
+40 42 
+
+El valor de la matriz C es de: 
+40 42 
+42 44 
+
+El valor de la matriz C es de: 
+42 44 
+44 46 
+
+El valor de la matriz C es de: 
+44 46 
+46 48 
+
+El valor de la matriz C es de: 
+46 48 
+48 50 
+
+El valor de la matriz C es de: 
+48 50 
+50 52 
+
+El valor de la matriz C es de: 
+50 52 
+52 54 
+
+El valor de la matriz C es de: 
+52 54 
+54 56 
+
+El valor de la matriz C es de: 
+54 56 
+56 58 
+
+El valor de la matriz C es de: 
+56 58 
+58 60 
+
+El valor de la matriz C es de: 
+58 60 
+60 62 
+
+El valor de la matriz C es de: 
+60 62 
+62 64 
+
+El valor de la matriz C es de: 
+62 64 
+64 66 
+
+El valor de la matriz C es de: 
+64 66 
+66 68 
+
+El valor de la matriz C es de: 
+66 68 
+68 70 
+
+El valor de la matriz C es de: 
+68 70 
+70 72 
+
+El valor de la matriz C es de: 
+70 72 
+72 74 
+
+El valor de la matriz C es de: 
+72 74 
+74 76 
+
+El valor de la matriz C es de: 
+74 76 
+76 78 
+
+El valor de la matriz C es de: 
+76 78 
+78 80 
+
+El valor de la matriz C es de: 
+78 80 
+80 82 
+
+El valor de la matriz C es de: 
+80 82 
+82 84 
+
+El valor de la matriz C es de: 
+82 84 
+84 86 
+
+El valor de la matriz C es de: 
+84 86 
+86 88 
+
+El valor de la matriz C es de: 
+86 88 
+88 90 
+
+El valor de la matriz C es de: 
+88 90 
+90 92 
+
+El valor de la matriz C es de: 
+90 92 
+92 94 
+
+El valor de la matriz C es de: 
+92 94 
+94 96 
+
+El valor de la matriz C es de: 
+94 96 
+96 98 
+
+El valor de la matriz C es de: 
+96 98 
+98 100 
+
+El valor de la matriz C es de: 
+98 100 
+100 102 
+
+El valor de la matriz C es de: 
+100 102 
+102 104 
+
+El valor de la matriz C es de: 
+102 104 
+104 106 
+
+El valor de la matriz C es de: 
+104 106 
+106 108 
+
+El valor de la matriz C es de: 
+106 108 
+108 110 
+
+El valor de la matriz C es de: 
+108 110 
+110 112 
+
+El valor de la matriz C es de: 
+110 112 
+112 114 
+
+El valor de la matriz C es de: 
+112 114 
+114 116 
+
+El valor de la matriz C es de: 
+114 116 
+116 118 
+
+El valor de la matriz C es de: 
+116 118 
+118 120 
+
+El valor de la matriz C es de: 
+118 120 
+120 122 
+
+El valor de la matriz C es de: 
+120 122 
+122 124 
+
+El valor de la matriz C es de: 
+122 124 
+124 126 
+
+El valor de la matriz C es de: 
+124 126 
+126 128 
+
+El valor de la matriz C es de: 
+126 128 
+128 130 
+
+El valor de la matriz C es de: 
+128 130 
+130 132 
+
+El valor de la matriz C es de: 
+130 132 
+132 134 
+
+El valor de la matriz C es de: 
+132 134 
+134 136 
+
+El valor de la matriz C es de: 
+134 136 
+136 138 
+
+El valor de la matriz C es de: 
+136 138 
+138 140 
+
+El valor de la matriz C es de: 
+138 140 
+140 142 
+
+El valor de la matriz C es de: 
+140 142 
+142 144 
+
+El valor de la matriz C es de: 
+142 144 
+144 146 
+
+El valor de la matriz C es de: 
+144 146 
+146 148 
+
+El valor de la matriz C es de: 
+146 148 
+148 150 
+
+El valor de la matriz C es de: 
+148 150 
+150 152 
+
+El valor de la matriz C es de: 
+150 152 
+152 154 
+
+El valor de la matriz C es de: 
+152 154 
+154 156 
+
+El valor de la matriz C es de: 
+154 156 
+156 158 
+
+El valor de la matriz C es de: 
+156 158 
+158 160 
+
+El valor de la matriz C es de: 
+158 160 
+160 162 
+
+El valor de la matriz C es de: 
+160 162 
+162 164 
+
+El valor de la matriz C es de: 
+162 164 
+164 166 
+
+El valor de la matriz C es de: 
+164 166 
+166 168 
+
+El valor de la matriz C es de: 
+166 168 
+168 170 
+
+El valor de la matriz C es de: 
+168 170 
+170 172 
+
+El valor de la matriz C es de: 
+170 172 
+172 174 
+
+El valor de la matriz C es de: 
+172 174 
+174 176 
+
+El valor de la matriz C es de: 
+174 176 
+176 178 
+
+El valor de la matriz C es de: 
+176 178 
+178 180 
+
+El valor de la matriz C es de: 
+178 180 
+180 182 
+
+El valor de la matriz C es de: 
+180 182 
+182 184 
+
+El valor de la matriz C es de: 
+182 184 
+184 186 
+
+El valor de la matriz C es de: 
+184 186 
+186 188 
+
+El valor de la matriz C es de: 
+186 188 
+188 190 
+
+El valor de la matriz C es de: 
+188 190 
+190 192 
+
+El valor de la matriz C es de: 
+190 192 
+192 194 
+
+El valor de la matriz C es de: 
+192 194 
+194 196 
+
+El valor de la matriz C es de: 
+194 196 
+196 198 
+
+El valor de la matriz C es de: 
+196 198 
+198 200 
+
+El valor de la matriz C es de: 
+198 200 
+200 202 
+
+
