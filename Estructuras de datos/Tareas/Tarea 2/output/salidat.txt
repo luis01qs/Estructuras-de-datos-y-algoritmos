@@ -1,0 +1,21 @@
+The value of x is: 10
+The value of x using pointer is: 10
+
+The value stored in dynamically allocated memory is: 20
+
+First element: 10
+Second element: 20
+Third element: 30
+
+The value of x is: 10
+The value of x using ptr1 is: 10
+The value of x using ptr2 is: 10
+
+Name: John
+Age: 25
+Height: 6.1 feet
+
+Name: Alice
+Age: 30
+Salary: $50000
+
