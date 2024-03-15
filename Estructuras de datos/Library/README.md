@@ -34,3 +34,4 @@ El prototipo de las funciones están en My_Library.hpp y el desarrollo de las fu
 
 - busqueda_lineal: Retorna la posición del elemento que se busca de forma lineal. Si no está en el vector retorna -1.
 - busqueda_lineal_recursiva: Retorna la posición del elemento que se busca de forma recursiva y lineal. Si no está en el vector retorna -1.
+- busqueda_

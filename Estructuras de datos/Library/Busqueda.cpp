@@ -15,7 +15,7 @@ int N::busqueda_lineal(std::vector<int> &a, int x)
 }
 
 // Busqueda lineal recursiva
-int N::busqueda_lineal_recursivo(std::vector<int> &a, int x, int i)
+int N::busqueda_lineal_recursiva(std::vector<int> &a, int x, int i)
 {
     // Caso en el que llegó al final del vector y no lo encontró
     if(i == int(a.size())) return -1;
@@ -24,7 +24,7 @@ int N::busqueda_lineal_recursivo(std::vector<int> &a, int x, int i)
     if(a[i] == x) return i;
 
     // En caso de que no esté en i busca en i+1
-    return N::busqueda_lineal_recursivo(a, x, i+1);
+    return N::busqueda_lineal_recursiva(a, x, i+1);
 }
 
 // Busqueda binaria no recursiva

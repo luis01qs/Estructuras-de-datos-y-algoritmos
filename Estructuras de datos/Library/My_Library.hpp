@@ -25,7 +25,7 @@ namespace N
 
     // Búsqueda
     int busqueda_lineal(std::vector<int> &a, int x);
-    int busqueda_lineal_recursivo(std::vector<int> &a, int x, int i);
+    int busqueda_lineal_recursiva(std::vector<int> &a, int x, int i);
     int busqueda_binaria(std::vector<int> &a, int x);
     int busqueda_binaria_recursiva(std::vector<int> &a, int l, int r, int x);
 }
