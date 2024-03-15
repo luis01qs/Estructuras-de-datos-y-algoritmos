@@ -27,3 +27,10 @@ El prototipo de las funciones están en My_Library.hpp y el desarrollo de las fu
 - swap: Intercambia dos valores tipo entero.
 - max: Retorna el máximo valor entre dos enteros.
 - min: Retorna el mínomo valor entre dos enteros.
+
+## Busqueda
+
+El prototipo de las funciones están en My_Library.hpp y el desarrollo de las funciones está en Busqueda.cpp. Aquí se encuentran las funciones:
+
+- busqueda_lineal: Retorna la posición del elemento que se busca de forma lineal. Si no está en el vector retorna -1.
+- busqueda_lineal_recursiva: Retorna la posición del elemento que se busca de forma recursiva y lineal. Si no está en el vector retorna -1.
