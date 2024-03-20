@@ -8,6 +8,7 @@ El proptotipo de las funciones están en My_Library.hpp y el desarrollo de las f
 
 - mcd: calcula el mcd entre dos números enteros.
 - factorial: calcula el n-ésimo elemento de la sucesión de fibonacci de manera recursiva (no es la más eficiente).
+- raiz_cuadrada: recibe tres long doubles, límite inferior l (recomendado 0), límite superior r(recomendado x) y el valor a calcular la raíz x, respectivamente. Retorna el valor con diferencia de 0.0001 de la raíz. 
 
 ## Ordenamiento
 
