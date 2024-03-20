@@ -23,3 +23,17 @@ int N::factorial(int n)
     return n*factorial(n-1);
 }
 
+// Raíz cuadrada
+long double N::raiz_cuadrada(long double l, long double r, long double &x)
+{
+    // Comprobamos error
+    if((r-l) < 0.00001) return (l+r)/2;
+
+    // Calculamos el punto medio
+    long double m = (l + r)/2;
+
+    // Dividimos el intervalo de búsqueda en dos
+    if(m*m < x) return N::raiz_cuadrada(m, r, x);
+    return N::raiz_cuadrada(l, m, x);
+}
+

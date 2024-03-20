@@ -9,6 +9,7 @@ namespace N
     // Matemáticas
     int mcd(int &x, int &y);
     int factorial(int n);
+    long double raiz_cuadrada(long double l, long double r, long double &x);
 
     // Sorting
     void sort_insercion(std::vector<int> &a);
