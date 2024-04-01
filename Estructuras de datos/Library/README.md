@@ -37,3 +37,10 @@ El prototipo de las funciones están en My_Library.hpp y el desarrollo de las fu
 - busqueda_lineal_recursiva: Retorna la posición del elemento que se busca de forma recursiva y lineal. Si no está en el vector retorna -1.
 - busqueda_binaria: Retorna la posición del elemento que se busca de forma binaria. Si no está en el vector retorn -1.
 - busqueda_binaria_recursiva: Retorna la posición del elemento que se busca de forma recursiva y binaria. Si no está en el vector retorn -1.
+
+## Estructuras
+
+El prototipo de las clases y sus funciones están en My:Library.hpp y el desarrollo se encuentre en Estructuras.cpp. Aquí se encuentran las clases:
+
+- Node: Estructura totalmente pública que es el fundamento del resto de estructuras. Almacena un valor de tipo T (necesario proporcionar el typename antes) y tiene un puntero de next para el siguiente nodo. 
+- Linked_list: Estrcutra que se sustenta en nodos, tiene un primer nodo (first) y último elemento nodo (last). Almacena los elementos hasta atrás de la lista con la función push, elimina el primer elemento de la lista con pop, imprime la lista desde el inicio hasta el final con print, regresa si la lista está vacía con empty y cuentra con constructor y destructor. 

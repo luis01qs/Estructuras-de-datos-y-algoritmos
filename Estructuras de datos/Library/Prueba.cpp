@@ -3,8 +3,9 @@
 
 int main()
 {
-    long double x = 7;
-    long double l = 0, r = x;
-    std::cout << N::raiz_cuadrada(l, r, x) << std::endl;
+    N::Linked_list<int> l;
+    l.push(3);
+    l.print();
+
     return 0;
 }

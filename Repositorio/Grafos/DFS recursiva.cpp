@@ -4,26 +4,18 @@
 
 using namespace std;
 
+
 vector<vector<int>> grafo;
 vector<bool> vis;
 void dfs(int nodo)
 {
-    stack<int> s;
-    s.push(nodo);
+    if(vis[nodo] == true) return;
+    vis[nodo] = true;
 
-    while(!s.empty())
+    for(int i=0;i<int(grafo[nodo].size());++i)
     {
-        nodo = s.top();
-        s.pop();
-
-        if(vis[nodo] == true) continue;
-        vis[nodo] = true;
-
-        for(int i=0;i<int(grafo[nodo].size());++i)
-        {
-            if(vis[grafo[nodo][i]] == true) continue;
-            s.push(grafo[nodo][i]);
-        }
+        if(vis[grafo[nodo][i]] == true) continue;
+        dfs(grafo[nodo][i]);
     }
 }
 
