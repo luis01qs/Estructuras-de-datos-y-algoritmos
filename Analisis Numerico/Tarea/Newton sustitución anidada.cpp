@@ -20,7 +20,7 @@ double absoluto(double &a);
 
 int main()
 {
-    freopen("salida.txt", "w", stdout);
+    //freopen("salida.txt", "w", stdout);
     Polynomial pol;
     pol.Initialize();
     pol.Divided_Differences();
@@ -40,7 +40,7 @@ void Polynomial::Initialize()
     for(int i=1;i<n+1;++i)
     {
         x[i-1] = cos(M_PI*(2*i-1)/(2*n));
-        y[i-1] = pow(x[i-1],4);
+        y[i-1] = cos(x[i-1]);
     }
 }
 

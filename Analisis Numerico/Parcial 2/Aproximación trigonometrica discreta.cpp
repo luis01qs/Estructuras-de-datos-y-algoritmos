@@ -28,12 +28,12 @@ ld evalucion(vector<ld> &a, vector<ld> &b, ld &x)
 
 ld f(long double &x)
 {
-    return 2*x*x - 9;
+    return 2*x*x-9;
 }
 
 int main()
 {
-    freopen("prueba.txt", "w", stdout);
+    //freopen("prueba.txt", "w", stdout);
     int m = 3;
     int n = 2;
 
@@ -59,9 +59,16 @@ int main()
         b[k] /= m;
     }
 
+    for(auto &e:a) cout << e << " ";
+    cout << endl;
+
+    for(auto &e:b) cout << e << " ";
+    cout << endl;
+
     for(ld i = -M_PI;i<= M_PI;i += (ld)0.001)
     {
-        cout << i << " " << evalucion(a, b, i) << " " << f(i) << endl;
+        //cout << i << " " << f(i) << " " << f(i) << endl;
+        //cout << i << " " << evalucion(a, b, i) << " " << f(i) << endl;
     }
 
     
