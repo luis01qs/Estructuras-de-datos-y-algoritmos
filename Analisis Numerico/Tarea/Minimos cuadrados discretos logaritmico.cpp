@@ -6,7 +6,7 @@ using ld = long double;
 int main()
 {
     freopen("prueba.txt", "r", stdin);
-    //freopen("salida.txt", "w", stdout);
+    freopen("salida.txt", "w", stdout);
     int n;
     cin>>n;
 
@@ -42,14 +42,14 @@ int main()
     cout << minimo << " " << maximo << endl;
 
     // Error
-    /*
+    
     ld error = 0;
     for(int i=0;i<n;++i)
     {
         error += pow((exp(y[i]) - exp(a0)*pow(exp(x[i]), a1)), 2);
     }
     cout << error << endl;
-    */
+    
 
     for(int i=0;i<n;++i)
     {
