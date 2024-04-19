@@ -36,17 +36,18 @@ class Circle_Linked_List
 int main()
 {
     Circle_Linked_List cll;
-    freopen("prueba.txt", "r", stdin);
 
-    int n;
-    std::cin>>n;
-
-    int x;
-    for(int i=0;i<n;++i)
-    {
-        std::cin>>x;
-        cll.insert_last(x);
-    }
+    cll.insert_last(1);
+    cll.insert_last(2);
+    cll.insert_last(3);
+    cll.insert_last(4);
+    cll.insert_last(5);
+    cll.insert_last(6);
+    cll.insert_last(7);
+    cll.insert_last(8);
+    cll.insert_last(9);
+    cll.insert_last(10);
+    cll.insert_last(11);
 
     cll.print_fwd();
     cll.pop_first();
